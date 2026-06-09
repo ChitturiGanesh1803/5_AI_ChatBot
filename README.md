@@ -104,25 +104,42 @@ Google Gemini API
 AI Agent
 Simple Memory
 Public Chat Interface
-Workflow Overview
-User Message
-      │
-      ▼
-Chat Trigger
-      │
-      ▼
-AI Agent
-      │
- ┌────┴────┐
- ▼         ▼
-Gemini   Memory
- Model
-      │
-      ▼
-AI Response
-      │
-      ▼
-User
+
+## Workflow Architecture
+
+```text
+┌───────┐
+│ User  │
+└───┬───┘
+    │
+    ▼
+┌──────────────┐
+│ Chat Trigger │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│   AI Agent   │
+└───┬────┬─────┘
+    │    │
+    │    └──────────────┐
+    │                   │
+    ▼                   ▼
+┌──────────────┐  ┌──────────────┐
+│ Google Gemini│  │ Simple Memory│
+│ Chat Model   │  │              │
+└──────┬───────┘  └──────┬───────┘
+       └─────────┬───────┘
+                 │
+                 ▼
+         ┌─────────────┐
+         │ AI Response │
+         └──────┬──────┘
+                │
+                ▼
+              User
+```
+
 Future Enhancements
 Vector Database Integration
 RAG (Retrieval-Augmented Generation)
