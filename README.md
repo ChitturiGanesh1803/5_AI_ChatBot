@@ -13,17 +13,17 @@ Easy deployment using n8n
 Scalable and customizable architecture
 Architecture
 
-Chat Trigger
-      │
-      ▼
-   AI Agent
-   ├── Google Gemini Chat Model
-   └── Simple Memory
-      │
-      ▼
-   Chat Response
-Prerequisites
+## Workflow Architecture
 
+```mermaid
+flowchart LR
+    A[User] --> B[Chat Trigger]
+    B --> C[AI Agent]
+    D[Google Gemini Chat Model] --> C
+    E[Simple Memory] --> C
+    C --> F[AI Response]
+    F --> A
+```
 Before starting, make sure you have:
 
 An n8n account
