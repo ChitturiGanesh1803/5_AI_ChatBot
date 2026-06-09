@@ -144,9 +144,9 @@ Built using n8n and Google Gemini to demonstrate no-code AI chatbot development 
 
 
 
-workshop on ai chatbot smart application 
-n8n.io website login 
-and next click on built a work flow 
+Workshop on ai chatbot smart application 
+N8n.io website login 
+And next click on built a work flow 
 add chat add ai agent 
 add chat model google gemini chat model use gemini api keys for developrs 
 create api key click on gemini chat 
