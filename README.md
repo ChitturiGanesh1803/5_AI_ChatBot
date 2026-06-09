@@ -12,6 +12,7 @@ Public chat interface
 Easy deployment using n8n
 Scalable and customizable architecture
 Architecture
+
 Chat Trigger
       │
       ▼
